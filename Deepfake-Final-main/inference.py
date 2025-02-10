@@ -7,7 +7,7 @@ import numpy as np
 
 # Google Drive file ID (Replace with your actual file ID)
 model_path = "final-model-1.h5"
-download_url = f"https://drive.google.com/file/d/1TDXsknpGlWghk1mxiN4bJQ9t3EBvn7eG/view?usp=sharing"
+download_url = f"https://drive.google.com/file/d/1NfoLyaOQwKov3Y2mEMP1DfMrKLhLR722/view?usp=sharing"
 
 # Ensure the model is downloaded and valid
 if not os.path.exists(model_path) or os.path.getsize(model_path) < 10_000_000:  # Check if the file is at least 10MB
