@@ -3,20 +3,9 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 from PIL import Image
 import numpy as np
-import gdown
-import os
-
-# Google Drive model URL (Replace YOUR_FILE_ID)
-url = "https://drive.google.com/file/d/1TDXsknpGlWghk1mxiN4bJQ9t3EBvn7eG/view?usp=sharing"
-model_path = "final-model-1.h5"
-
-# Download the model if it doesn't exist
-if not os.path.exists(model_path):
-    print("Downloading model from Google Drive...")
-    gdown.download(url, model_path, quiet=False)
 
 # Load the model
-model = load_model(model_path)
+model = load_model('final-model-1.h5')
 
 def preprocess_image(image):
     image = image.convert("RGB")  # Convert RGBA/Grayscale to RGB
